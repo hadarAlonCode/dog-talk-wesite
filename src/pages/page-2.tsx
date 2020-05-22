@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const SecondPage = (props: PageProps) => (
+ 
   <Layout>
     <SEO title="Page two" description="this is page two" />
     <h1>Hi from the second page</h1>

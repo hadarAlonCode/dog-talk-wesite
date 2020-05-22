@@ -1,18 +1,27 @@
 import React from 'react';
 import { Link } from "gatsby"
+import { myContext } from '../provider';
 
 const Menu = props => {
+    const {text} = props
     return (
-        <div>
+        <myContext.Consumer>
+        {context => ( 
+            <React.Fragment>
+                <div>
+                  <ul className="menu__container">
+                      
+                        <li> <Link to="/">{text.HOME}</Link></li>
+                        <li> <Link to="/about">{text.ABOUT}</Link></li>
+                        <li> <Link to="/services">{text.SERVICES}</Link></li>
+                        <li>{text.CONTACT}</li>
 
-            <ul className="menu__container">
-                <li> <Link to="/">דף בית</Link></li>
-                <li> <Link to="/about">אודות</Link></li>
-                <li> <Link to="/services">שרותים</Link></li>
-                <li>צור קשר</li>
-            </ul>
-            
-        </div>
+                        <button onClick={() => context.changeLanguage()}>change Language </button>
+                    </ul>   
+                </div>
+                </React.Fragment>
+            )}
+            </myContext.Consumer>
     );
 };
 
