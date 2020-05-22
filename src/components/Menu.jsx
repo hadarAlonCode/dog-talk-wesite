@@ -9,15 +9,15 @@ const Menu = props => {
         {context => ( 
             <React.Fragment>
                 <div>
-                  <ul className="menu__container">
-                      
-                        <li> <Link to="/">{text.HOME}</Link></li>
-                        <li> <Link to="/about">{text.ABOUT}</Link></li>
-                        <li> <Link to="/services">{text.SERVICES}</Link></li>
-                        <li>{text.CONTACT}</li>
-
-                        <button onClick={() => context.changeLanguage()}>change Language </button>
-                    </ul>   
+                    <div className="grid">
+                       <ul className="menu__container">     
+                            <li> <Link to="/">{text.HOME}</Link></li>
+                            <li> <Link to="/about">{text.ABOUT}</Link></li>
+                            <li> <Link to="/services">{text.SERVICES}</Link></li>
+                            <li>{text.CONTACT}</li>
+                            <button onClick={() => context.changeLanguage()}>change Language </button>
+                        </ul> 
+                    </div>  
                 </div>
                 </React.Fragment>
             )}

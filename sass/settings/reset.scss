@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+
+// <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,6 +22,7 @@ time, mark, audio, video {
  padding: 0;
  border: 0;
  font-size: 100%;
+
  font: inherit;
  vertical-align: baseline;
  box-sizing: border-box;
@@ -26,10 +34,13 @@ footer, header, hgroup, menu, nav, section {
 }
 
 
+
+
 body {
  line-height: 1;
  overflow-x: hidden;
- font-family: sans-serif;
+ background-color: white;
+ color: black;
  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
  
 }
@@ -47,7 +58,6 @@ q:before, q:after {
 button {
     cursor: pointer;
     border:none;
-    // font-family: 'Montserrat', sans-serif!important;
 
 }
 button:focus {
@@ -61,14 +71,70 @@ table {
  border-spacing: 0;
 }
 
-input {
-  // font-family: 'Montserrat', sans-serif!important;
-
+input[type=text], textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-radius: 0px;
 }
+
+input {
+  
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: unset;
+  background-color: transparent;
+}
+
+
 *{
     box-sizing: border-box;
-   
-    
+}
+
+.App{
+  width: 100vw;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.grid{
+  width: 900px;
+  position: relative;
+  margin: auto;
+
+  @include mediaMaxWidth(900px){
+    width: calc(100vw - 60px); 
+  }
+}
+
+
+.hebrew__lan{
+    direction: rtl;
+    font-family:  'Rubik', sans-serif;
+
+}
+
+.english__lan{
+    direction: ltr;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.section__padding{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.app__container{
+    min-height: 100vh;
+    position: relative;
 }
 
 
