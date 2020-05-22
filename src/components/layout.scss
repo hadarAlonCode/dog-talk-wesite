@@ -1,3 +1,7 @@
+
+
+
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -42,6 +46,9 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  outline: unset;
+  color: black;
+  text-decoration: none;
 }
 a:active,
 a:hover {
@@ -620,3 +627,9 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+
+@import '../../sass/settings/mixins.scss';
+@import '../../sass/settings/reset.scss';
+@import '../../sass/settings/var.scss';
+@import '../../sass/components/menu.scss';
