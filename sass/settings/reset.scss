@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 
 
 body {
+ direction: rtl;
  line-height: 1;
  overflow-x: hidden;
  background-color: white;
@@ -116,13 +117,13 @@ html {
 
 
 .hebrew__lan{
-    direction: rtl;
+    direction: rtl!important;
     font-family:  'Rubik', sans-serif;
 
 }
 
 .english__lan{
-    direction: ltr;
+    direction: ltr!important;
     font-family: 'Montserrat', sans-serif;
 
 }
