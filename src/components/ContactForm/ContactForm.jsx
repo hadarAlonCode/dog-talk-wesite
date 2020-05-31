@@ -126,7 +126,9 @@ class ContactForm extends Component {
                     {form_loader ?
                        <Loader />
                        :
-                       <button className="btn" onClick={()=>this.submitForm()}>שלח</button>
+                    //    <button className="btn" onClick={()=>this.submitForm()}>שלח</button>
+
+                       <button className="btn" >שלח</button>
                     }
 
                 
