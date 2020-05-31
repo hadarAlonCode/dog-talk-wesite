@@ -14,8 +14,6 @@ const Header = (props) => (
               <h1>Dog Talk</h1>
               <p>אילוף כלבים , פנסיון ומעון יום</p>
            </section>
-
-
     </div>
            
   </header>
