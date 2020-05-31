@@ -1,0 +1,21 @@
+.title__conatiner{
+    position: relative;
+    padding-bottom:20px ;
+    .color__circale{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        position: absolute ;
+        background-color: $strong;
+        
+        top: -20px;
+        right: -11px;
+    }
+
+    h2{
+        font-size: 30px;
+        padding-top: 30px;
+        position: relative;
+        z-index: 2;
+    }
+}

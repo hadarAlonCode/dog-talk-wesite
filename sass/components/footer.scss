@@ -3,7 +3,7 @@
     background-color: #212020;
     @include displayFlex(column, center, center);
     width: 100vw;
-    position: absolute;
+    position: relative;
     bottom: 0;
 
     .btn{
@@ -39,10 +39,10 @@
         width: 45px;
 
         &:hover{
-            background-color: $header;
+            background-color: $strong;
             transition: 0.3s;
             cursor: pointer;
-            border-color: $header;
+            border-color: $strong;
         }
     }
 

@@ -1,0 +1,18 @@
+.about__container{
+    position: relative;
+    padding-top: 50px;
+    @include displayFlex(row, unset, unset);
+
+
+  aside{
+    position: relative;
+    
+        .about__text{
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+
+    }
+    
+}

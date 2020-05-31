@@ -8,17 +8,17 @@ const Provider = props => {
 
 
     // === set site language and diraction css
-    useEffect(() => {
-      const {haim_site_language} = localStorage
-      if(haim_site_language !== undefined){
-        Setlanguage(haim_site_language)
-        setDiractionCss(haim_site_language)
-      }else{
-        Setlanguage("hebrew")
-        setDiractionCss("hebrew")
-      }
+    // useEffect(() => {
+    //   const {haim_site_language} = localStorage
+    //   if(haim_site_language !== undefined){
+    //     Setlanguage(haim_site_language)
+    //     setDiractionCss(haim_site_language)
+    //   }else{
+    //     Setlanguage("hebrew")
+    //     setDiractionCss("hebrew")
+    //   }
 
-     }, [])
+    //  }, [])
 
 
    // === change site language and diraction css

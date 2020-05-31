@@ -2,23 +2,26 @@ import React from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Header from "../components/Header"
+import About from "../components/About/About"
+import Services from "../components/Services/Services"
 
 
 const IndexPage = props => {
 
   return (
     <Layout>
-      <SEO title="חיים אלון - מעצב פנים | מנהל פרוייקטים בנגרות" />
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
+      <SEO title="Dog Talk - אילוף כלבים והכשרת כלבי ביטחון" />
+      <div className="home__container">
+        
+         <Header />
+         <About />
+         <Services />
       </div>
-      <Link to="/page-2/">Go to page 2</Link>
-      <Link to="/about/">Go to about</Link>
+      
+      
+      {/* <Link to="/about/">Go to about</Link> */}
     </Layout>
   )
 }

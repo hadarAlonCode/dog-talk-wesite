@@ -1,0 +1,64 @@
+header{
+    background-color: $background;
+    height: 400px;
+    padding-top: 60px;
+
+    // background-image: url("../../src/images/back-dog.jpg"); /* The image used */
+    // background-color: #cccccc; /* Used if the image is unavailable */
+    // height: 500px; /* You must set a specified height */
+    // background-position: center; /* Center the image */
+    // background-repeat: no-repeat; /* Do not repeat the image */
+    // background-size: cover; /* Resize the background image to cover the entire container */
+
+
+    section{
+      position: relative;
+      height: 100%;
+    }
+
+   img{
+       position: relative;
+       z-index: 1;
+   }
+
+   .header__container{
+    @include displayFlex(row, unset, center);
+    flex-direction: row-reverse;
+    height: 100%;
+    
+    
+   }
+
+    .color__circale{
+        background-color: $strong;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        position: absolute;
+        right: 66%;
+        top: -162px;
+
+    }
+
+    .header__image{
+        position: relative;
+        right:0px;
+        max-width: 316px;
+    }
+
+    .text__section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+
+        h1{
+            font-size: 70px;
+        }
+        p{
+            font-size: 20px; 
+            margin-top: 10px;
+        }
+    }
+}
+

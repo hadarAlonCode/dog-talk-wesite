@@ -9,9 +9,8 @@ import React, {useState , useEffect} from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import "./layout.scss"
-import Menu from "./Menu"
+import NavBar from "./NavBar"
 import {site_text} from "../text/text"
 import { myContext } from '../provider';
 import Footer from "./Footer"
@@ -34,12 +33,9 @@ const Layout = ({ children }) => {
      <myContext.Consumer>
       {context => (
         <React.Fragment>
-          <Menu text={site_text[context.language]['navbar']} language={context.language} />
-          {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-          
-          
-            <main className="grid">{children}</main>
-            <Footer />
+          <NavBar text={site_text['navbar']}  />     
+          <main >{children}</main>
+          <Footer />
           
 
       </React.Fragment>

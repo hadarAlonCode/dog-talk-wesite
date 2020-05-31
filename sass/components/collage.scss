@@ -1,0 +1,43 @@
+.collage__container{
+    position: relative;
+    width: 305px;
+    height: 300px;
+
+    .collage__img{
+        height: 130px;
+        position: relative;
+        border: solid 3px white;
+        @include shadow()
+    }
+
+    .collage__img__1{
+        top: 14px;
+        left: -33px;
+        transform: rotate(10deg);
+        height: 124px;
+        z-index: 2;
+    }
+
+    .collage__img__2{
+        top: 5px;
+        left: -38px;
+        transform: rotate(-9deg);
+        height: 138px;
+
+    }
+    .collage__img__3{
+        top: 10px;
+        left: -18px;
+        transform: rotate(-8deg);
+        height: 135px;
+        z-index: 3;
+
+
+    }
+    .collage__img__4{
+        top: -6px;
+        left: -20px;
+        transform: rotate(5deg);
+
+    }
+}

@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Haim Alon`,
-    description: `חיים אלון, מעצב פנים, מנהל פרוייקטים בנגרות, בעל נסיון רב שנים בתכנון, ליווי פיקוח ותכנון נגרות`,
+    title: `Dog Talk - אילוף כלבים והכשרת כלבי ביטחון`,
+    description: `אילוף כלבים והכשרת כלבי ביטחון`,
     author: `@gatsbyjs`,
   },
   plugins: [
