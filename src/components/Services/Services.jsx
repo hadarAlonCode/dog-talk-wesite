@@ -8,7 +8,7 @@ const Services = props => {
         <section className="services__section">
 
             <div className="grid"> 
-            <Title title="השרותים שלנו" />
+            <Title title="מה אנחנו מציעים לכם?" />
             </div>
 
             

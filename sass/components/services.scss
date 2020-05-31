@@ -4,16 +4,29 @@
 
         .services__container{
             @include displayFlex(row, center, center);
-            padding-top: 50px;
+            padding-top: 30px;
             padding-bottom: 50px;
+            
 
             .service__container{   
                 @include displayFlex(column, unset, center);
                 @include shadow();
                 border-radius: 10px;
-                height: 255px;
-                
+                height:280px; 
                 margin-left: 20px;
+                width: calc(100% /4);
+                transition: 0.3s;
+
+                &:hover{
+                    transition: 0.3s;
+                    // border: solid 3px $strong;
+                    box-shadow: $strong;
+                    --box-shadow-color:  $strong;
+                    box-shadow: 0 0 10px $strong;
+
+                   
+    
+                  }
         
                 img{
                 width: 80px;

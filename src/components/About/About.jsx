@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import Title from "../Title"
 import Collage from "../Collage"
+import back_icon from "../../images/about-icon.png"
 
 const About = (props) => (
   <section>
@@ -21,10 +22,9 @@ const About = (props) => (
         <Collage />
       </aside>
 
-      
-     
-
     </div>
+
+    {/* <img className='background__icon'src={back_icon} alt="icon" /> */}
            
   </section>
 )

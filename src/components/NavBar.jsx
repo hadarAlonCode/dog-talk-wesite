@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from "gatsby"
 import { myContext } from '../provider';
-import logo from "../images/logo.png"
+import logo from "../images/logo-dog-talk.png"
 
 const NavBar = props => {
     const {text} = props

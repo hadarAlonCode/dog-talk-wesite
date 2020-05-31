@@ -6,8 +6,10 @@
 }
 
 .navbar__container{ 
-    background: transparent;
+    // background: transparent;
     transition: 0.3s;
+    backdrop-filter: blur(2px);
+    background-color: #2ec4b68c;
 }
 
 #nav{
@@ -28,10 +30,21 @@
     ul{
         @include displayFlex(row, unset, center);
         height: 100%;
+        
 
         a{
             margin-right: auto;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;    
+
+            &:hover{
+                transition: 0.3s;    
+                color: black;      
+                }
+           
         }
+    }
 
         a:first-child{
             margin-right: auto;
@@ -44,28 +57,26 @@
             cursor: pointer;
             height: 100%;
             @include displayFlex(row, center, center);
-           
+            
         }
 
 
         img{
-            width: 50px;
+            width: 80px;
         }
 
         .navbar__link{
             transition: 0.3s;
-            font-size: 16px;
-            padding: 3px;
+            font-size: 18px;
+            padding: 10px;
             text-align: center;
             &:hover{
-            transition: 0.3s;
-            box-shadow: 0px 10px 11px -8px rgba(255, 255, 255, 0.58);
-            border-radius: 5px;
-          
+            transition: 0.3s;    
+            color: black;      
             }
         }
     }
-}
+
 
 
 .mobile__nav{

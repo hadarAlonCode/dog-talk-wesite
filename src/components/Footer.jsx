@@ -24,8 +24,24 @@ const Footer = props => {
         </div>
 
         <Fade bottom>
+            <div className="hadar__signature__container">
+
+
                  <img className='hadar__logo' src={hadar} alt="logo" />
+                 <div>Site by</div>
+
+                 <span>|</span>
+
+
+                 <div>כל הזכויות שמורות ל – Dog Talk © 2020</div>
+
+
+
+
+            </div>
+                
         </Fade>
+
            
         </footer>
     );
