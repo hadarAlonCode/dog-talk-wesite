@@ -8,8 +8,16 @@
         position: absolute ;
         background-color: $strong;
         
-        top: -20px;
+        top: -12px;
         right: -11px;
+    }
+
+    .title__line{
+        height: 3px;
+        border-radius: 5px;
+        margin-top: 5px;
+        background-color: $strong;
+        width: 120px;
     }
 
     h2{

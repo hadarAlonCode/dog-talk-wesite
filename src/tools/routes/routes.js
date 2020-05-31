@@ -1,0 +1,1 @@
+export const MAIL_API = 'https://hadaralon-server.herokuapp.com/mail/post'

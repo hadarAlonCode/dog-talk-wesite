@@ -5,6 +5,7 @@ const Title = props => {
         <div className="title__conatiner">  
             <div className="color__circale"></div>
             <h2>{props.title}</h2>
+            {/* <div className="title__line"></div> */}
         </div>
     );
 };
