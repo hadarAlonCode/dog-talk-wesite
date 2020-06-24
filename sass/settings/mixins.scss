@@ -4,6 +4,12 @@
     }
 }
 
+@mixin mediaMinWidth($size){
+    @media screen and (min-width:$size) {
+        @content;
+    }
+}
+
 
 @mixin gradient(){
 background: #23074d;  /* fallback for old browsers */

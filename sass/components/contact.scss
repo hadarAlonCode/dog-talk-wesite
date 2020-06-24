@@ -2,6 +2,7 @@
     background-color: #212020;
     color: white;
     padding: 10px;
+    padding-top: 40px;
 
     .contact__section__inner{
         @include displayFlex(column, center, center);
@@ -16,8 +17,7 @@
    height: 230px;
    width: 350px;
    
-   @include mediaMaxWidth(400px){
-        
+   @include mediaMaxWidth(400px){    
     width: 250px;
   }
 }

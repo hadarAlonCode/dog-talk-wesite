@@ -29,14 +29,17 @@ header{
     height: 100%;
     position: relative;
 
-    .header__border{
-        height: 82%;
-        width: 106%;
-        border: solid 4px white;
-        position: absolute;
     
+    @include mediaMinWidth(1000px){
+        .header__border{
+            height: 82%;
+            width: 106%;
+            border: solid 4px white;
+            position: absolute;
+        }
     }
-    
+
+   
     
    }
 

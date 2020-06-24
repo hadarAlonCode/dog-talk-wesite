@@ -1,11 +1,19 @@
 .services__section{
     background-color: whitesmoke;
     margin-top: 35px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 
         .services__container{
             @include displayFlex(row, center, center);
             padding-top: 30px;
             padding-bottom: 50px;
+            @include mediaMaxWidth(950px){
+                @include displayFlex(row, space-evenly, center);
+                flex-wrap: wrap;
+                width: 700px;
+
+            }
             
 
             .service__container{   
@@ -13,9 +21,11 @@
                 @include shadow();
                 border-radius: 10px;
                 height:280px; 
-                margin-left: 20px;
+                // margin-left: 20px;
                 width: calc(100% /4);
                 transition: 0.3s;
+                min-width: 200px;
+                margin: 20px;
 
                 &:hover{
                     transition: 0.3s;
