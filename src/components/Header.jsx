@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import dog from "../images/dog-h.png"
 import logo from "../images/logo1.png"
+import border from "../images/customWhiteBorder.png"
 
 const Header = (props) => (
   <header>
@@ -20,6 +21,8 @@ const Header = (props) => (
               <h1>אילוף כלבים , פנסיון ומעון יום</h1>
            </section>
     </div>
+    {/* <img className="header__border__buttom"src={border} alt="Dog Talk" /> */}
+    <div className="header__border__buttom"></div>
            
   </header>
 )

@@ -1,6 +1,6 @@
 .about__container{
     position: relative;
-    padding-top: 50px;
+    // padding-top: 50px;
     @include displayFlex(row, unset, unset);
 
 
@@ -10,6 +10,8 @@
         .about__text{
             margin-top: 20px;
             font-size: 20px;
+            text-align: center;
+            line-height: 1.4;
         }
 
 

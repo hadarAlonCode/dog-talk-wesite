@@ -32,10 +32,10 @@ header{
     
     @include mediaMinWidth(1000px){
         .header__border{
-            height: 82%;
-            width: 106%;
-            border: solid 4px white;
-            position: absolute;
+            // height: 82%;
+            // width: 106%;
+            // border: solid 4px white;
+            // position: absolute;
         }
     }
 
@@ -69,5 +69,18 @@ header{
         }
         
     }
+
+.header__border__buttom{
+    width: 100vw;
+    height: 88px;
+    position: absolute;
+    bottom: -50px;
+    border-top: 50px solid transparent;
+    border-left: 1500px solid #ffffff;
+    border-bottom: 50px solid transparent;
+    z-index: 100;
+}
+
+
 }
 
