@@ -11,7 +11,7 @@ const Header = (props) => (
     <div className="grid header__container">
     <div className="header__border"></div>
 
-           <section>
+           <section className="img__section">
                <img className='header__image'src={dog} alt="dog" />
            </section>
            <section className="text__section">
@@ -19,6 +19,10 @@ const Header = (props) => (
               <img className='logo__image'src={logo} alt="Dog Talk" />
 
               <h1>אילוף כלבים, מעון יום, פנסיון והכשרת כלבי ביטחון</h1>
+              <a style={{textDecoration: "none"}} href="tel:+972543978591" >
+                  <button className="btn">התקשרו עכשיו</button>
+                  </a>
+
            </section>
     </div>
     {/* <img className="header__border__buttom"src={border} alt="Dog Talk" /> */}
