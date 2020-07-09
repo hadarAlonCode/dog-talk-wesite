@@ -13,9 +13,9 @@ const NavBar = props => {
     
 
     useEffect(() => {
-        let innerWidth = window.screen.width;
+        let innerWidth =window.innerWidth;
         console.log(innerWidth)
-        console.log(window.screen.width)
+        console.log(window.innerWidth)
         innerWidth <= 800 ? toggleMobileNav(true) : toggleMobileNav(false)
         window.addEventListener("resize", onResize);
         
@@ -28,7 +28,7 @@ const NavBar = props => {
         if( nav && first_load ){
     
         let scrollFunc = function() {
-            let innerWidth = window.screen.width
+            let innerWidth = window.innerWidth
 
             let scroll = window.scrollY
             let num =400
@@ -54,7 +54,7 @@ const NavBar = props => {
 
       const onResize =()=>{
 
-        let innerWidth = window.screen.width;
+        let innerWidth = window.innerWidth;
         innerWidth <= 800 ? toggleMobileNav(true) : toggleMobileNav(false)
     }
 
@@ -70,7 +70,7 @@ const NavBar = props => {
     }
 
     const closeMobileBar =()=>{
-        let innerWidth = window.screen.width;
+        let innerWidth = window.innerWidth;
 
        if( innerWidth <= 800){
         setShowMobileLink(!show_mobile_nav_link)
