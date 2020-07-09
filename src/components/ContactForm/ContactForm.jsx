@@ -73,10 +73,11 @@ class ContactForm extends Component {
                 console.log("asdaskdkjsanj")
                
                 let subject = `Email from Dog Talk Website - ${form_data.name} `
-                let text = `name:${form_data.name}, email:${form_data.email ? form_data.email  : '' }, phone: ${form_data.phone}, message: ${form_data.message} `
+                let html = ` <div> שם פרטי:${form_data.name}, <br> אימייל:${form_data.email ? form_data.email  : '' }, <br> טלפון: ${form_data.phone}, <br> מתעיינ/ת ב: ${form_data.message} </div>`
                 let body = {
                     subject,
-                    text: text, 
+                    text: "Hello world?", // plain text body
+                    html: html, 
                 }
 
                 let new_contact = await sendContactForm(body)

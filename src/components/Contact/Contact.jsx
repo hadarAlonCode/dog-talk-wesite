@@ -15,7 +15,7 @@ const Contact= props => {
     return (
         <section className="contact__section" id="contact">
             <div className="grid contact__section__inner">
-            <Fade left delay={300}>
+            <Fade delay={300}>
             <h2>צרו איתנו קשר</h2>
             <div className="contact__msg">השאירו פרטים ונחזור אליכם בהקדם!</div>
             </Fade>

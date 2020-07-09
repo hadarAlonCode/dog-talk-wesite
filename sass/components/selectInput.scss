@@ -31,8 +31,8 @@
 
     ul{
         position: absolute;
-        height: fit-content;
-        min-height: 150px;  
+        height: max-content!important;
+        min-height: 200px;  
    
         li{
            background-color: #ffffff;
