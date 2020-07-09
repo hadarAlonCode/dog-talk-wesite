@@ -1,5 +1,7 @@
 .footer__container{
     height: max-content;
+    font-family:  'Rubik', sans-serif;
+    z-index: 19;
     background-color: #212020;
     @include displayFlex(column, center, center);
     width: 100vw;
@@ -71,7 +73,7 @@
         @include displayFlex(row, center, center);
         color: white;
         margin-bottom: 15px;
-        font-family: 'Montserrat', sans-serif;
+        font-family:  'Rubik', sans-serif;
         @include mediaMaxWidth(500px){
             @include displayFlex(column-reverse, space-evenly, center);
         }
@@ -79,6 +81,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family:  'Rubik', sans-serif;
+
             @include mediaMaxWidth(500px){
                margin-top: 15px;
             }
