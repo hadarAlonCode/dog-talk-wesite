@@ -14,17 +14,11 @@ class ContactForm extends Component {
             form_data: {
                 name: "",
                 email:"",
-                message:"פנסיון",
+                message:"אילוף",
                 phone: "",
             },
             form_loader: false,
             check_validation: false,
-            options: [
-                'פנסיון',
-                'מעון יום',
-                'אילוף',
-                'הכשרת כלבי בטחון',
-            ]
 
         }
     }
@@ -104,7 +98,7 @@ class ContactForm extends Component {
 
 
     render() {
-        const {form_data ,check_validation ,form_loader} = this.state
+        const {form_data ,options ,check_validation ,form_loader} = this.state
         return (
             <div className="contact__form">
                 <div className="contact__form__container">
@@ -133,7 +127,12 @@ class ContactForm extends Component {
                         check_validation={check_validation}
                     />
                     <SelectInput 
-                    options={this.state.options} state_name="message"
+                    options={
+                        ['פנסיון'
+                        ,'מעון יום'
+                        , 'הכשרת כלבי בטחון'
+                        , 'אילוף'
+                    ]} state_name="message"
                     state_value={form_data["message"]}
                     placeholder="איזה שרות תרצו לקבל ?"
                        updateForm={this.updateForm}  />

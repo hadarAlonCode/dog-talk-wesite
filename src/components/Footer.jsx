@@ -28,7 +28,7 @@ const Footer = props => {
 
                    <div className="hadar__logo__container">
                    <img className='hadar__logo' src={hadar} alt="logo" />
-                 <div>Site by</div>
+                   <div>Site by</div>
 
                    </div>
                
