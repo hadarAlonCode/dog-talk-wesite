@@ -120,6 +120,11 @@ header{
     border-left: 1800px solid #ffffff;
     border-bottom: 50px solid transparent;
     z-index: 100;
+    @include mediaMaxWidth(601px){
+        font-size: 25px;
+        border-left: 1800px solid #ffffff;
+
+    }
 }
 
 

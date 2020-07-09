@@ -3,6 +3,7 @@
     color: white;
     padding: 10px;
     padding-top: 40px;
+    height: 400px;
 
     .contact__section__inner{
         @include displayFlex(column, center, center);
