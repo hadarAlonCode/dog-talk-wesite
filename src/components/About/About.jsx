@@ -3,6 +3,7 @@ import React from "react"
 import Title from "../Title"
 import Collage from "../Collage"
 import back_icon from "../../images/about-icon.png"
+import Fade from 'react-reveal/Fade';
 
 const About = (props) => (
   <section id="about"  style={{paddingTop: '40px', paddingBottom: '40px'}}>
@@ -10,6 +11,7 @@ const About = (props) => (
       
        <aside>
              <Title title="מי אנחנו?" />
+             <Fade  delay={200}>
 
             <div className="about__text">
                 <p >Dog Talk הוקמה על מנת לספק שירות לבעלי הכלבים.</p> 
@@ -29,6 +31,7 @@ const About = (props) => (
                 <p>לרועי ישנה מומחיות בבניית תקשורת נכונה בין כלב לבעלים מה שיגרום לחיים בריאים ,נוחים וכייף יותר עם כלביהם.</p>
                 
             </div>  
+            </Fade>
       </aside>
 
       <aside>
