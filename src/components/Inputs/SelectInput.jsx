@@ -160,7 +160,7 @@ class SelectBox extends Component {
                                 ></input>
 
 
-                                : <aside>{state_value ? state_value : "במה את/ה מתעניין? "}</aside>
+                                : <aside>{state_value ? state_value : "במה את/ה מעוניינ/ת ? "}</aside>
 
 
                         }
