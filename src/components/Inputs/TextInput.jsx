@@ -50,7 +50,7 @@ class TextInput extends Component {
         if (state_name === "email") {
 
 
-            if (!validator.isEmail(value)) {
+            if ( value !== '' && !validator.isEmail(value)) {
                 this.setState({
                     is_validate: false
                 })
@@ -58,6 +58,24 @@ class TextInput extends Component {
                 return false
 
             } else {
+                this.setState({
+                    is_validate: true
+                })
+
+                return true
+            }
+
+        } else if (state_name === "phone") {
+            console.log(value)
+
+            if (value === '' || value.length < 10  ) {
+                this.setState({
+                    is_validate: false
+                })
+                return false
+
+            } else {
+
                 this.setState({
                     is_validate: true
                 })

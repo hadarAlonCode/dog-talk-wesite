@@ -7,6 +7,7 @@ import Header from "../components/Header"
 import About from "../components/About/About"
 import Services from "../components/Services/Services"
 import Contact from "../components/Contact/Contact"
+import Projects from "../components/Projects/Projects"
 
 
 const IndexPage = props => {
@@ -18,7 +19,8 @@ const IndexPage = props => {
         
          <Header />
          <About />
-         <Services />
+         {/* <Services /> */}
+         <Projects />
          <Contact />
       </div>
       

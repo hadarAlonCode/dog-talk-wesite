@@ -8,13 +8,18 @@
         @include displayFlex(column, center, center);
         .contact__msg{
             text-align: center;
+            font-size: 20px;
+        }
+
+        h2{
+            font-size: 25px;
         }
     }
 }
 
 
 .contact__form{
-   height: 230px;
+//    height: 230px;
    width: 350px;
    
    @include mediaMaxWidth(400px){    
@@ -43,7 +48,7 @@
     
 
     h3{
-        color: #ff0057;
+        color: $background;
         font-size: 30px;
         font-weight: 500;
     }

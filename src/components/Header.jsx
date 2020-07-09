@@ -18,7 +18,7 @@ const Header = (props) => (
               {/* <h1>Dog Talk</h1> */}
               <img className='logo__image'src={logo} alt="Dog Talk" />
 
-              <h1>אילוף כלבים , פנסיון ומעון יום</h1>
+              <h1>אילוף כלבים, מעון יום, פנסיון והכשרת כלבי ביטחון</h1>
            </section>
     </div>
     {/* <img className="header__border__buttom"src={border} alt="Dog Talk" /> */}

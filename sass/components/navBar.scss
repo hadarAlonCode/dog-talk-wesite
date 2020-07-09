@@ -83,32 +83,40 @@
     
 
     .mobile__navbar{
+        padding-top: 60px;
         transition: 0.3s!important;
         pointer-events: none!important;
         display: flex;
         flex-direction: column!important;
-        justify-content: center!important;
+        justify-content: start!important;
         align-items: center;
         position: fixed;
         width: 100vw;
         top: 0;
         opacity: 0;
         color: transparent;
-        height: 60vh!important;
+        height: 58vh!important;
         min-height: max-content;
         background-color: #8a2be2;
-        background: linear-gradient(to bottom, #0F011B, #DD013C);
+        background: linear-gradient(to bottom, #f99b3b, $background);
         transform: scaleY(0);
         transform-origin: top;
 
         a{
             height: 100px;
             margin-right: unset!important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%
         }
 
         li{
-      
+          
             width: 100vw;
+            height: 80px!important;
+            margin: unset!important;
+            font-size: 25px!important;
 
         }
 

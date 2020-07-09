@@ -3,6 +3,14 @@ header{
     height: 400px;
     padding-top: 60px;
     position: relative;
+    @include mediaMaxWidth(601px){
+        height: 350px;
+        width: 100vw;
+    }
+    @include mediaMaxWidth(500px){
+        height: 320px;
+        width: 100vw;
+    }
 
     // background-image: url("../../src/images/back-dog.jpg"); /* The image used */
     // background-color: #cccccc; /* Used if the image is unavailable */
@@ -16,6 +24,7 @@ header{
       position: relative;
       height: 100%;
       z-index: 1;
+
     }
 
    img{
@@ -49,6 +58,19 @@ header{
         position: relative;
         right:0px;
         max-width: 316px;
+        @include mediaMaxWidth(710px){
+            max-width: 280px;
+            bottom: -30px;
+        }
+        @include mediaMaxWidth(601px){
+            max-width: 250px;
+            bottom: -20px;
+        }
+        @include mediaMaxWidth(500px){
+            max-width: 180px;
+            bottom: -60px;
+            right:10px;
+        }
     }
 
     .text__section{
@@ -61,11 +83,27 @@ header{
             width: 320px;
             margin: 18px;
             margin-right: 0;
+            @include mediaMaxWidth(710px){
+                width: 280px;
+                margin-left: 0;
+            }
+            @include mediaMaxWidth(601px){
+                width: 230px;
+                margin-left: 0;
+            }
+            @include mediaMaxWidth(500px){
+                width: 100%;
+                margin-left: 0;
+            }
         }
 
         h1{
             font-size: 32px;
             color: white;
+            @include mediaMaxWidth(601px){
+                font-size: 25px;
+               
+            }
         }
         
     }
@@ -76,7 +114,7 @@ header{
     position: absolute;
     bottom: -50px;
     border-top: 50px solid transparent;
-    border-left: 1500px solid #ffffff;
+    border-left: 1800px solid #ffffff;
     border-bottom: 50px solid transparent;
     z-index: 100;
 }
