@@ -5,14 +5,14 @@ import Collage from "../Collage"
 import back_icon from "../../images/about-icon.png"
 
 const About = (props) => (
-  <section  style={{paddingTop: '40px', paddingBottom: '40px'}}>
+  <section id="about"  style={{paddingTop: '40px', paddingBottom: '40px'}}>
     <div className="grid about__container">
       
        <aside>
              <Title title="מי אנחנו?" />
 
             <div className="about__text">
-                <p>שירות לבעלי הכלבים</p> 
+                <p>Dog Talk הוקמה על מנת לספק שירות לבעלי הכלבים.</p> 
                 <p>רועי בר דיין בן 32 נשוי לשיר ואבא לריין ולני.</p> 
 
                 <p>

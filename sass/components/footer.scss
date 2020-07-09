@@ -72,12 +72,25 @@
         color: white;
         margin-bottom: 15px;
         font-family: 'Montserrat', sans-serif;
-
+        @include mediaMaxWidth(500px){
+            @include displayFlex(column-reverse, space-evenly, center);
+        }
+        .hadar__logo__container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include mediaMaxWidth(500px){
+               margin-top: 15px;
+            }
+        }
     }
 
     span{
         padding-left: 20px;
         padding-right: 20px;
+        @include mediaMaxWidth(500px){
+           display: none;
+        }
     }
 
 }

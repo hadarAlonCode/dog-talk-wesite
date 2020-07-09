@@ -12,7 +12,7 @@ const Footer = props => {
         <div className="social__icons">
             {socials.map(s=>{
                 return (
-                    <a href={s.link} target="_blank" >
+                    <a href={s.link} target={s.name === 'phone' ? '' : "_blank" }>
                         <div className="social__icon__container">
                         <img className='social__icon' src={s.icon} alt={s.name} />
                         </div>
@@ -26,9 +26,12 @@ const Footer = props => {
         <Fade bottom>
             <div className="hadar__signature__container">
 
-
-                 <img className='hadar__logo' src={hadar} alt="logo" />
+                   <div className="hadar__logo__container">
+                   <img className='hadar__logo' src={hadar} alt="logo" />
                  <div>Site by</div>
+
+                   </div>
+               
 
                  <span>|</span>
 

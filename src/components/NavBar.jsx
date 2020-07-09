@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { Link } from "gatsby"
 import { myContext } from '../provider';
-import logo from "../images/logo-dog-talk.png"
+import logo from "../images/logo1.png"
 
 const NavBar = props => {
     const {text} = props
@@ -47,10 +47,11 @@ const NavBar = props => {
             window.addEventListener('scroll', scrollFunc)   
             setFirstLoad(false)
         }
-      } );
+      }, [first_load] );
 
 
       const onResize =()=>{
+
         let innerWidth = window.innerWidth;
         innerWidth <= 800 ? toggleMobileNav(true) : toggleMobileNav(false)
     }
@@ -62,7 +63,17 @@ const NavBar = props => {
 
 
     const toggleOpenMobileNav =()=>{
+        
         setShowMobileLink(!show_mobile_nav_link)
+    }
+
+    const closeMobileBar =()=>{
+        let innerWidth = window.innerWidth;
+
+       if( innerWidth <= 800){
+        setShowMobileLink(!show_mobile_nav_link)
+       } 
+       
     }
 
     return (
@@ -84,13 +95,13 @@ const NavBar = props => {
            : null
            }
                     <ul className= {show_mobile_nav_link ? "grid mobile__navbar--on mobile__navbar" : "grid mobile__navbar"} >
-                    <li className="navbar__link"> <Link to="/">{text.HOME}</Link></li>
-                            <li className="navbar__link"> <Link to="">{text.ABOUT}</Link></li>
-                            <li className="navbar__link"> <Link to="">{text.SERVICES}</Link></li>
-                            <li className="navbar__link">{text.CONTACT}</li>
+                    <li onClick={()=>closeMobileBar()} className="navbar__link"> <Link to="/">{text.HOME}</Link></li>
+                            <li onClick={()=>closeMobileBar()} className="navbar__link"> <Link to="#about">{text.ABOUT}</Link></li>
+                            <li onClick={()=>closeMobileBar()} className="navbar__link"> <Link to="#services">{text.SERVICES}</Link></li>
+                            <li onClick={()=>closeMobileBar()} className="navbar__link"><Link to="#contact">{text.CONTACT}</Link></li>
 
                     <a onClick={()=>toggleOpenMobileNav()} href={"#"} >
-                       <li><Link to="#"><img className='navbar__logo'src={logo} alt="hadar" /></Link></li>
+                       <li onClick={()=>closeMobileBar()}><Link to="#"><img className='navbar__logo'src={logo} alt="hadar" /></Link></li>
                     </a>
                          
                            

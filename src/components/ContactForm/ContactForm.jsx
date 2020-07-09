@@ -1,5 +1,7 @@
 import React ,{Component} from 'react';
 import TextInput from '../Inputs/TextInput';
+import SelectInput from '../Inputs/SelectInput';
+
 import Loader from '../Loader/Loader';
 
 import { sendContactForm } from '../../functions/api';
@@ -12,10 +14,17 @@ class ContactForm extends Component {
             form_data: {
                 name: "",
                 email:"",
-                message:""
+                message:"פנסיון",
+                phone: "",
             },
             form_loader: false,
-            check_validation: false
+            check_validation: false,
+            options: [
+                'פנסיון',
+                'מעון יום',
+                'אילוף',
+                'הכשרת כלבי בטחון',
+            ]
 
         }
     }
@@ -68,7 +77,7 @@ class ContactForm extends Component {
             } else {
                
                 let subject = `Email from ${form_data.email} `
-                let text = `name:${form_data.name}, email:${form_data.email}, message: ${form_data.message} `
+                let text = `name:${form_data.name}, email:${form_data.email}, phone: ${form_data.phone}, message: ${form_data.message} `
                 let body = {
                     subject,
                     text: text, 
@@ -107,21 +116,34 @@ class ContactForm extends Component {
                         check_validation={check_validation}
                         title_text="שם*" 
                     />
-                    <TextInput
-                        title_text='דוא"ל*' 
-                        state_name={"email"}
-                        state_value={form_data["email"]}
-                        err_text={'אנא הכנס דוא"ל תקין'}
+                     <TextInput
+                        title_text='טלפון נייד*'
+                        state_name={"phone"}
+                        state_value={form_data["phone"]}
+                        err_text={'אנא הכנס טלפון תקין'}
                         updateForm={this.updateForm}
                         check_validation={check_validation}
                     />
-                    <TextInput
+                     <TextInput
+                        title_text='אפשר גם אימייל' 
+                        state_name={"email"}
+                        state_value={form_data["email"]}
+                        err_text={'אנא הכנס אימייל תקין'}
+                        updateForm={this.updateForm}
+                        check_validation={check_validation}
+                    />
+                    <SelectInput 
+                    options={this.state.options} state_name="message"
+                    state_value={form_data["message"]}
+                    placeholder="איזה שרות תרצו לקבל ?"
+                       updateForm={this.updateForm}  />
+                    {/* <TextInput
                         state_name={"message"}
                         state_value={form_data["message"]}
                         err_text={"אנא הכנס הודעה"}
                         updateForm={this.updateForm}
                         check_validation={check_validation}
-                        title_text="הודעה" />
+                        title_text="הודעה" /> */}
 
                     {form_loader ?
                        <Loader />

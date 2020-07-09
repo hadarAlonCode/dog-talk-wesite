@@ -13,11 +13,11 @@ const Contact= props => {
     }
 
     return (
-        <section className="contact__section">
+        <section className="contact__section" id="contact">
             <div className="grid contact__section__inner">
             <Fade left delay={300}>
             <h2>צרו איתנו קשר</h2>
-            <div className="contact__msg">השאירו הודעה ונחזור אליכם בהקדם!</div>
+            <div className="contact__msg">השאירו פרטים ונחזור אליכם בהקדם!</div>
             </Fade>
              {success_message ?
                 <SuccessMessage  contactFormSuccess={contactFormSuccess}/>
