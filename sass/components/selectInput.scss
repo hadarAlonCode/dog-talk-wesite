@@ -31,11 +31,12 @@
 
     ul{
         position: absolute;
-        height: max-content!important;
-        min-height: 150px!important;
+        height: fit-content!important;
+        // min-height: 150px!important;
    
         li{
-           background-color: #ffffff;
+           background-color: #35aea321;
+           margin: 4px;
    
         }
      }
@@ -111,7 +112,7 @@
     flex-direction: row;
     justify-content: unset;
     align-items: center;
-    font-size: 16px;
+    font-size: 17px;
     span {
         margin-left: 5px;
     }
@@ -123,8 +124,6 @@
   }
   
   .selectbox__list {
-    height: max-content;
-    // max-height: 150px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     background-color: #ffffff;
