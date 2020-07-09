@@ -37,10 +37,6 @@ const Footer = props => {
 
 
                  <div>כל הזכויות שמורות ל – Dog Talk © 2020</div>
-
-
-
-
             </div>
                 
         </Fade>
