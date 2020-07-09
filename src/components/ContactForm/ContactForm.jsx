@@ -51,6 +51,7 @@ class ContactForm extends Component {
 
 
     submitForm = async () => {
+        console.log('asdsad')
         const { form_data } = this.state
         const {contactFormSuccess} = this.props
 
@@ -69,9 +70,10 @@ class ContactForm extends Component {
                 return
 
             } else {
+                console.log("asdaskdkjsanj")
                
-                let subject = `Email from ${form_data.email} `
-                let text = `name:${form_data.name}, email:${form_data.email}, phone: ${form_data.phone}, message: ${form_data.message} `
+                let subject = `Email from Dog Talk Website - ${form_data.name} `
+                let text = `name:${form_data.name}, email:${form_data.email ? form_data.email  : '' }, phone: ${form_data.phone}, message: ${form_data.message} `
                 let body = {
                     subject,
                     text: text, 
@@ -147,9 +149,9 @@ class ContactForm extends Component {
                     {form_loader ?
                        <Loader />
                        :
-                    //    <button className="btn" onClick={()=>this.submitForm()}>שלח</button>
+                       <button className="btn" onClick={()=>this.submitForm()}>שלח</button>
 
-                       <button className="btn" >שלח</button>
+                    //    <button className="btn" >שלח</button>
                     }
 
                 

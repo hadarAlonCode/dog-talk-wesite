@@ -3,6 +3,7 @@ import axios from 'axios'
 
 
 export const sendContactForm = (body) => new Promise(resolve => {
+    console.log(body);
     
     axios.post(`${MAIL_API}`, body ).then(res => {
         const {
