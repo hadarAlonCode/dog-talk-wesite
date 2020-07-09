@@ -44,7 +44,7 @@ body {
  background-color: white;
  color: black;
  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
- 
+ width: 100vw;
 }
 ol, ul {
  list-style: none;
@@ -137,6 +137,7 @@ html {
 .app__container{
     min-height: 100vh;
     position: relative;
+    width: 100vw;
 }
 
 .btn{

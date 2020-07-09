@@ -3,6 +3,8 @@ header{
     height: 400px;
     padding-top: 60px;
     position: relative;
+    overflow-x: hidden;
+    overflow: hidden;
     @include mediaMaxWidth(601px){
         height: 350px;
         width: 100vw;
@@ -109,6 +111,7 @@ header{
     }
 
 .header__border__buttom{
+    overflow-x: hidden;
     width: 100vw;
     height: 88px;
     position: absolute;
